@@ -87,6 +87,7 @@
 			list($cp) = explode(';', $line);
 			$cp = trim(StrToLower($cp));
 			$cp = preg_replace('!\s+!', '-', $cp);
+			echo($cp);
 			$category_map[$cp] = array($last_cat, $p);
 			$p++;
 
@@ -193,6 +194,7 @@
 	load_short_names('data_emoji_names_more.txt');
 	load_short_names('data_emoji_names_v4.txt');
 	load_short_names('data_emoji_names_v5.txt');
+	load_short_names('data_emoji_names_v11.txt');
 	echo "DONE\n";
 
 	function load_short_names($file){
